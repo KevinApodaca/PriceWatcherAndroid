@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fc88e5cc-d067-4df9-8c38-55c5fa67ca43" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/HW2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/PriceWatcher/base/ItemView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/PriceWatcher/base/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/PriceWatcher/console/UI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/PriceWatcher/model/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/PriceWatcher/model/PriceFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/out/production/HW2/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/out/production/HW2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/out/production/HW2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/out/production/HW2/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/out/production/HW2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/out/production/HW2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/out/production/HW2/HW2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/out/production/HW2/META-INF/HW2.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/out/production/HW2/PriceWatcher/base/ItemView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/out/production/HW2/PriceWatcher/base/ItemView$ClickListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/out/production/HW2/PriceWatcher/base/ItemView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/out/production/HW2/PriceWatcher/base/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/out/production/HW2/PriceWatcher/console/UI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/out/production/HW2/PriceWatcher/model/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW2/out/production/HW2/PriceWatcher/model/PriceFinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/.idea/artifacts/HW2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/HW2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/.idea/PriceWatcher.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/base/ItemListRenderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/base/ItemView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/base/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/console/UI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/images/about.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/images/add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/images/check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/images/clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/images/edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/images/openLink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/images/remove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/model/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/PriceWatcher/model/PriceFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/PriceWatcher/base/ItemView.ClickListener.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/PriceWatcher/base/ItemView.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/PriceWatcher/base/Main.ExitListener.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/PriceWatcher/base/Main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/PriceWatcher/base/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/PriceWatcher/base/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/PriceWatcher/base/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/PriceWatcher/console/UI.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/PriceWatcher/console/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/PriceWatcher/console/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/PriceWatcher/console/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/PriceWatcher/model/Item.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/PriceWatcher/model/PriceFinder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/PriceWatcher/model/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/PriceWatcher/model/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/PriceWatcher/model/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/allclasses-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/allclasses-noframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/deprecated-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/element-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/index-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/external/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/images/ui-bg_flat_0_aaaaaa_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/images/ui-bg_flat_75_ffffff_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/images/ui-icons_454545_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/images/ui-icons_888888_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/jquery-1.10.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/jquery-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/jquery-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/jquery-ui.structure.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/jquery-ui.structure.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/jszip-utils/dist/jszip-utils-ie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/jszip-utils/dist/jszip-utils-ie.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/jszip-utils/dist/jszip-utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/jszip-utils/dist/jszip-utils.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/jszip/dist/jszip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/jquery/jszip/dist/jszip.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/member-search-index.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/overview-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/package-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/package-search-index.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/resources/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/resources/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/serialized-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/type-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/javadoc/type-search-index.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/HW2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/PriceWatcher/.idea/PriceWatcher.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/PriceWatcher/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/PriceWatcher/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/PriceWatcher/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/PriceWatcher/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/PriceWatcher/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/PriceWatcher/base/ItemView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/PriceWatcher/base/ItemView$ClickListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/PriceWatcher/base/ItemView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/PriceWatcher/base/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/PriceWatcher/console/UI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/PriceWatcher/model/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW3/out/production/HW2/PriceWatcher/model/PriceFinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/HW4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/allclasses-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/allclasses-noframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/deprecated-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/element-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/index-files/index-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/index-files/index-10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/index-files/index-11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/index-files/index-12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/index-files/index-13.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/index-files/index-14.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/index-files/index-15.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/index-files/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/index-files/index-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/index-files/index-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/index-files/index-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/index-files/index-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/index-files/index-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/index-files/index-8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/index-files/index-9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/external/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/images/ui-bg_flat_0_aaaaaa_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/images/ui-bg_flat_75_ffffff_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/images/ui-icons_454545_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/images/ui-icons_888888_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/jquery-1.10.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/jquery-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/jquery-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/jquery-ui.structure.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/jquery-ui.structure.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/jszip-utils/dist/jszip-utils-ie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/jszip-utils/dist/jszip-utils-ie.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/jszip-utils/dist/jszip-utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/jszip-utils/dist/jszip-utils.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/jszip/dist/jszip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/jquery/jszip/dist/jszip.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/member-search-index.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/overview-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/package-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/package-search-index.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/resources/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/resources/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/serialized-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/base/FileItemManager.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/base/ItemListRenderer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/base/ItemManager.ClickListener.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/base/ItemManager.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/base/Main.ExitListener.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/base/Main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/base/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/base/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/base/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/console/CopyCutPaste.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/console/UI.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/console/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/console/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/console/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/model/Item.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/model/PriceFinder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/model/WebPriceFinder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/model/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/model/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/main/java/Pricewatcher/model/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/test/java/Pricewatcher/AppTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/test/java/Pricewatcher/TestRunner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/test/java/Pricewatcher/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/test/java/Pricewatcher/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/src/test/java/Pricewatcher/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/type-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/javadoc/type-search-index.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/.idea/HW4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/.idea/PriceWatcher.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/base/ItemListRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/base/ItemView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/base/ItemView$ClickListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/base/ItemView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/base/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/base/Main$AddItemPopUp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/base/Main$ExitListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/base/Main$MyComponentListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/base/Main$clearAllItems.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/base/Main$editItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/base/Main$removeItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/base/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/console/UI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/images/about.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/images/add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/images/check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/images/clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/images/edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/images/openLink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/images/remove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/model/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/PriceWatcher/model/PriceFinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/out/production/HW4/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/base/FileItemManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/base/ItemListRenderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/base/ItemManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/base/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/console/CopyCutPaste.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/console/UI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/images/about.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/images/add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/images/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/images/check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/images/clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/images/edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/images/firstItem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/images/lastItem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/images/openLink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/images/remove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/model/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/model/PriceFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/model/WebPriceFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/main/java/Pricewatcher/saved_items.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/test/java/Pricewatcher/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW4/src/test/java/Pricewatcher/TestRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework-0-Warming U/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework-0-Warming U/file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_25" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/a4330/cs/utep/edu/mypricewatcher/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-418">
+              <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/a4330/cs/utep/edu/mypricewatcher/PriceFinder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/a4330/cs/utep/edu/mypricewatcher/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/a4330/cs/utep/edu/mypricewatcher/PriceFinder.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_common_1_1_1_jar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_1_jar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_collections_28_0_0_jar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_1_3_jar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customview_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_loader_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_28_0_0_jar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" />
+        <option value="$PROJECT_DIR$/.idea/assetWizardSettings.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1920" />
+    <option name="height" value="1200" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="mypricewatcher" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Nexus_5X_API_25" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-09-30T21:20:11.586Z" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="not.eligible.for.single.variant.sync" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc88e5cc-d067-4df9-8c38-55c5fa67ca43" name="Default Changelist" comment="" />
+      <created>1569870261570</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569870261570</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.328541" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info id="simpleUML" order="9" weight="0.32960597" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.32920355" />
+      <window_info anchor="bottom" id="Logcat" order="1" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.32743362" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/a4330/cs/utep/edu/mypricewatcher/PriceFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/a4330/cs/utep/edu/mypricewatcher/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-418">
+          <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
