@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/popRefreshProduct"
+        android:icon="@drawable/ic_autorenew_white_36dp"
+        android:title="@string/refresh" />
+    <item
+        android:id="@+id/popEdit"
+        android:icon="@drawable/ic_mode_edit_white_36dp"
+        android:title="@string/edit" />
+    <item
+        android:id="@+id/popBrowse1"
+        android:icon="@drawable/ic_open_in_new_white_36dp"
+        android:title="@string/internalBrowser" />
+    <item
+        android:id="@+id/popBrowse2"
+        android:icon="@drawable/ic_open_in_new_white_36dp"
+        android:title="@string/externalBrowser" />
+    <item
+        android:id="@+id/popDelete"
+        android:icon="@drawable/ic_delete_forever_white_36dp"
+        android:title="@string/delete" />
+</menu>

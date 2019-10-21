@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_add_shopping_cart_white_36dp"
+        android:title="@string/addAction"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_autorenew_white_36dp"
+        android:title="@string/refreshAction"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/openAmazon"
+        android:title="@string/amazon" />
+    <item
+        android:id="@+id/openEbay"
+        android:title="@string/ebay" />
+    <item
+        android:id="@+id/openWalmart"
+        android:title="@string/walmart" />
+</menu>
