@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/popDelete"
+        android:title="Delete" />
+    <item
+        android:id="@+id/popupdate"
+        android:title="Update" />
+
+    <item
+        android:id="@+id/popEdit"
+        android:title="Edit" />
+
+
+    <item
+        android:id="@+id/popURL"
+        android:title="Launch URL" />
+
+
+</menu>

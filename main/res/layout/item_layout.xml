@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <TextView
+        android:id="@+id/nameList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/urlLabelList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameList"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="URL:"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/urlList"
+        android:layout_width="279dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="7dp"
+        android:layout_toEndOf="@+id/urlLabelList"
+        android:text="URL"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/initialPriceLabelList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="121dp"
+        android:text="Initial Price:"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/initialPriceList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="41dp"
+        android:text="$$$"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/currentPriceLabelList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/initialPriceLabelList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="107dp"
+        android:text="Current Price:"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/currentPriceList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/initialPriceList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="41dp"
+        android:text="$$$"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/priceChangeLabelList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentPriceLabelList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="111dp"
+        android:text="Price Change:" />
+
+    <TextView
+        android:id="@+id/priceChangeList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentPriceList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="41dp"
+        android:text="$$$"
+        android:textSize="15sp" />
+
+</RelativeLayout>
