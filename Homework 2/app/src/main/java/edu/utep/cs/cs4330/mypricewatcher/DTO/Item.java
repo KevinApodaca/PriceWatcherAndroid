@@ -1,5 +1,8 @@
 package edu.utep.cs.cs4330.mypricewatcher.DTO;
 
+/**
+ * This class will define the item constructor.
+ */
 public class Item {
     public String name;
     public String url;
@@ -7,7 +10,14 @@ public class Item {
     public double currentPrice;
     public double priceChage;
 
-
+/**
+ * Method will instantiate the item
+ * @param name - the item name.
+ * @param url - the item url.
+ * @param initialPrice - the item initial price.
+ * @param currentPrice - the item current price.
+ * @param priceChage - the amount the price changed.
+ */
     public Item(String name, String url, double initialPrice, double currentPrice, double priceChage){
         this.name = name;
         this.url = url;

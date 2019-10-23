@@ -1,5 +1,5 @@
 package edu.utep.cs.cs4330.mypricewatcher;
-
+//imports
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +14,9 @@ import java.text.DecimalFormat;
 
 import edu.utep.cs.cs4330.mypricewatcher.DTO.Item;
 
+/**
+ * Class will be used to construct the adapter.
+ */
 public class CustomAdapter extends ArrayAdapter<Item> {
 
     private Context context;
@@ -24,7 +27,13 @@ public class CustomAdapter extends ArrayAdapter<Item> {
         this.context = context;
         this.items = objects;
     }
-
+/**
+ * This method will be used to get the view for the item information.
+ * @param position - the position of the view.
+ * @param convertView - the view will be converted.
+ * @param parent - the parent view providing properties.
+ * @return convertView - the new view.
+ */
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -49,6 +58,10 @@ public class CustomAdapter extends ArrayAdapter<Item> {
 
         return convertView;
     }
+    /**
+     * This method will get the count.
+     * @return count 
+     */
 
     @Override
     public int getCount() {

@@ -1,5 +1,5 @@
 package edu.utep.cs.cs4330.mypricewatcher;
-
+//imports
 import android.app.Activity;
 import android.app.Dialog;
 import android.os.Bundle;
@@ -11,6 +11,9 @@ import android.widget.TextView;
 import edu.utep.cs.cs4330.mypricewatcher.DTO.Item;
 import edu.utep.cs.cs4330.mypricewatcher.DTO.ItemController;
 
+/**
+ * This class will be used to create the dialogs.
+ */
 public class CustomDialog extends Dialog implements View.OnClickListener {
 
     private Activity activity;
@@ -23,30 +26,32 @@ public class CustomDialog extends Dialog implements View.OnClickListener {
         this.activity = activity;
         this.itemController = itemController;
     }
+    /**
+     * This method will use the onCreate method to handle item view instances.
+     * @param savedInstanceState - the current instance of the item.
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.dialog_layout);
-
         itemName = findViewById(R.id.itemName);
         itemInitPrice = findViewById(R.id.itemInitPrice);
         itemUrl = findViewById(R.id.ItemURL);
         cancelBtn = findViewById(R.id.CancelButton);
         addBtn = findViewById(R.id.AddButton);
-
         cancelBtn.setOnClickListener(this);
         addBtn.setOnClickListener(this);
-
     }
-
-
+    /**
+     * This method will use the onClick method to handle the button clicks for items.
+     * @param view - the item view.
+     */
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.AddButton:
-                //we are going to add the element to the listview
                 double price = Double.valueOf(String.valueOf(itemInitPrice.getText()));
                 Item item = new Item(itemName.getText().toString(), "https://" +
                         itemUrl.getText().toString(),
@@ -54,7 +59,6 @@ public class CustomDialog extends Dialog implements View.OnClickListener {
                         price, 0.0);
                 itemController.addItem(item);
             case R.id.CancelButton:
-                //we are going to cancel the dialog
                 dismiss();
         }
     }

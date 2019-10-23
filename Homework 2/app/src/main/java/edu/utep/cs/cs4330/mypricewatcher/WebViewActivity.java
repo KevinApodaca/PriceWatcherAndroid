@@ -1,6 +1,6 @@
 package edu.utep.cs.cs4330.mypricewatcher;
 
-
+//imports
 import android.app.Activity;
 import android.os.Bundle;
 import android.webkit.WebSettings;
@@ -13,12 +13,15 @@ import androidx.annotation.Nullable;
  */
 public class WebViewActivity extends Activity {
     private WebView webview;
+    /**
+     * Method handles the URL view creation.
+     * @param savedInstanceState - the item view saved.
+     */
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.webview_layout);
-
         webview = (WebView) findViewById(R.id.WebViewURL);
         String url = getIntent().getStringExtra("url");
         webview.setWebViewClient(new WebViewClient());
