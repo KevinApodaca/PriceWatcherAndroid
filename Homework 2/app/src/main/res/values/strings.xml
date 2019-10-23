@@ -1,28 +1,3 @@
 <resources>
-    <string name="app_name">Price Watcher</string>
-    <string name="buttonRefresh">Refresh</string>
-    <string name="name">Name: </string>
-    <string name="price">Price: </string>
-    <string name="initial"><b>Initial Price: </b></string>
-    <string name="current"><b>Current Price: </b></string>
-    <string name="change"><b>Change: </b></string>
-    <string name="url">URL: </string>
-    <string name="browse">Open Item</string>
-    <string name="category">Category: </string>
-    <string name="description">Description: </string>
-    <string name="date"><b>Date Added: </b></string>
-    <string name="errorMessage">Error: Please input valid information.</string>
-    <string name="delete">Delete</string>
-    <string name="add">Add Item</string>
-    <string name="edit">Edit Item </string>
-    <string name="refresh">Refresh Item</string>
-    <string name="Lorem_Ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel nisi ac nisl consectetur vulputate. Maecenas id placerat justo. Morbi sit amet purus tempus, iaculis tortor nec, ultrices lorem. Vivamus vel hendrerit massa, quis consectetur diam. In tincidunt est sit amet sapien aliquam interdum. Ut dapibus eros et purus dapibus dapibus eu convallis eros. Proin ultrices eu odio at porta. Phasellus id libero et dui imperdiet semper quis at arcu.</string>
-    <string name="findAction">Find an Item to Watch</string>
-    <string name="refreshAction">Refresh Item List</string>
-    <string name="addAction">Add Item</string>
-    <string name="walmart">Search in Walmart</string>
-    <string name="ebay">Search in Ebay</string>
-    <string name="amazon">Search in Amazon</string>
-    <string name="internalBrowser">Open in Internal Browser</string>
-    <string name="externalBrowser">Open in External Browser</string>
+    <string name="app_name">My Price Watcher</string>
 </resources>
