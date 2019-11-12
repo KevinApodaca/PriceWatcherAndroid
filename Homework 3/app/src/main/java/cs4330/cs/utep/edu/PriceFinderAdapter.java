@@ -201,7 +201,8 @@ public class PriceFinderAdapter extends ArrayAdapter<PriceFinder> {
                     add(pf);
                     notifyDataSetChanged();
                 }
-            } else {
+            }
+             else {
                 clear();
                 notifyDataSetChanged();
             }

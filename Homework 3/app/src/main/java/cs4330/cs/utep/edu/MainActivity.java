@@ -702,7 +702,7 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
 
         Log.i("Count", String.valueOf(response.getCount()));
         if(response.getCount() == 0) {
-            Toast.makeText(getBaseContext(), "Add new products", Toast.LENGTH_LONG).show();
+            Toast.makeText(getBaseContext(), "Add new item", Toast.LENGTH_LONG).show();
         }
 
         while(response.moveToNext()) {
