@@ -115,9 +115,8 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
         ArrayList<PriceFinder> tmp = new ArrayList<PriceFinder>();
         this.filter                = findViewById(R.id.searchFilter);
         this.itm                   = new ItemManager();
-
-        // Set visibility of search bar off from the beginning
-        this.filter.setVisibility(View.GONE);
+        
+        this.filter.setVisibility(View.GONE);   // used to set the visibility of the search bar.
 
         // Check network connection
         if (isNetworkOn()) {
