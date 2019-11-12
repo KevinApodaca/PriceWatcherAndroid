@@ -215,7 +215,9 @@ public class showItem extends FragmentActivity {
         editDialogFragment.setArguments(args);
         editDialogFragment.show(fm, "edit_item");
     }
-
+    /**
+     * Method will update the item and reflect changes. Showing the change in price from old to new.
+     */
     public void editItem(String name, String source, int position, String image, String id){
         PriceFinder pf = this.itm.getItem(position);
         this.itm.editItem(pf, pf.getPrice(), name, source, image);
