@@ -126,7 +126,7 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
              Toast.makeText(getBaseContext(), "You are offline", Toast.LENGTH_SHORT).show();
         }
 
-        // Load into text "items.json" string (If exist)
+        /** Loading the items that are in the json file. */
         if(!isNetworkOn()) {
 
             try {
@@ -137,7 +137,7 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
 
             this.itemsList = findViewById(R.id.items_list);
 
-            // Convert text (json text) into objects to load into the adapter list
+            /** Here we have to convert the json into valid objects for the adapter list. */
             if (text != null) {
                 tmp = gson.fromJson(text, new TypeToken<ArrayList<PriceFinder>>() {
                 }.getType());
@@ -150,13 +150,13 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
             this.itm = loadFromDB();
         }
 
-        //Log.i("Name", this.itm.getItem(0).getName());
-
         this.itemAdapter = new PriceFinderAdapter(this, this.itm.getList());
         this.itemsList.setAdapter(itemAdapter);
         this.itemsList.setTextFilterEnabled(true);
-
-        // Create search filter
+        
+        /**
+         * Here we implement the feature and make a search that filters out items.
+         */
         filter.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -176,6 +176,7 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
 
         String action = getIntent().getAction();
         String type   = getIntent().getType();
+        
         if (Intent.ACTION_SEND.equalsIgnoreCase(action) && type != null && ("text/plain".equals(type))){
             String url = getIntent().getStringExtra(Intent.EXTRA_TEXT);
             FragmentManager fm = getSupportFragmentManager();
@@ -196,7 +197,9 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
         itemAdapter.setNotifyOnChange(true);
 
     }
-
+    /**
+     * Method to implement the Async function.
+     */
     public void doAsync(String url){
         if(!isNetworkOn()){
             showNetWorkDialog();
@@ -206,7 +209,7 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
             ais.setUrl(url);
             ais.execute();
         } else{
-            Toast.makeText(getBaseContext(), "Need Internet to work!", Toast.LENGTH_LONG).show();
+            Toast.makeText(getBaseContext(), "Please connect to the internet", Toast.LENGTH_LONG).show();
 
         }
 
