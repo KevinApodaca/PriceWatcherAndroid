@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Price Watcher</string>
+    <string name="priceChange">Price change:</string>
+    <string name="currentPrice">Current price:</string>
+    <string name="itemName">Item name</string>
+    <string name="initialPrice">Initial price:</string>
+    <string name="source">Link:</string>
+    <string name="url">Copy URL</string>
+    <string name="calculateButton">Reload price</string>
+    <string name="edit">Edit</string>
+    <string name="delete">delete</string>
+    <string name="add_item">Add</string>
+    <string name="reload_price">Reload price</string>
+    <string name="edit_item">Edit</string>
+    <string name="open_detail">Show detail</string>
+    <string name="open_webpage">Open webpage</string>
+    <string name="dialog_delete_message">Are you sure you want to delete this item?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="deleteDialogTitle">Delete</string>
+    <string name="editDialogTitle">Edit Item</string>
+    <string name="networkDialog">You are not connected to the Internet, you wan to turn of Wi-Fi?</string>
+    <string name="networkDialogTitle">Connect to Internet</string>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".showItem">
+   <!-- tools:context=".View.MainActivity"> -->
+
+ <Button
+     android:id="@+id/btnDeleteItem"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="16dp"
+     android:layout_marginEnd="16dp"
+     android:layout_marginBottom="28dp"
+     android:text="@string/delete"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="1.0"
+     app:layout_constraintStart_toStartOf="parent" />
+
+ <Button
+     android:id="@+id/btnEditItem"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginEnd="16dp"
+     android:layout_marginBottom="8dp"
+     android:text="@string/edit"
+     app:layout_constraintBottom_toTopOf="@+id/btnDeleteItem"
+     app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPriceChangeItem"
+        android:layout_width="308dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/priceChange"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCurrentPriceItem" />
+
+    <TextView
+        android:id="@+id/textViewCurrentPriceItem"
+        android:layout_width="308dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/currentPrice"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInitialPriceItem" />
+
+    <TextView
+        android:id="@+id/textViewNameItem"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/itemName"
+
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewInitialPriceItem"
+        android:layout_width="308dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/initialPrice"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameItem" />
+
+    <TextView
+        android:id="@+id/textViewSourceItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/source"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPriceChangeItem" />
+
+    <EditText
+        android:id="@+id/editTextSourceItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/url"
+        android:inputType="textUri"
+        app:layout_constraintStart_toEndOf="@+id/textViewSourceItem"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPriceChangeItem" />
+
+    <Button
+        android:id="@+id/buttonReloadItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/calculateButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeleteItem"
+        app:layout_constraintStart_toEndOf="@+id/editTextSourceItem" />
+
+    <Button
+        android:id="@+id/btnWebItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="Open Webpage"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReloadItem"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditItem"
+        app:layout_constraintStart_toEndOf="@+id/editTextSourceItem" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+    android:id="@+id/add"
+    android:enabled="true"
+    android:icon="@android:drawable/ic_input_add"
+    android:title="add"
+    android:visible="true"
+    app:showAsAction="always" />
+
+   <item
+    android:id="@id/reload"
+    android:enabled="true"
+    android:icon="@android:drawable/stat_notify_sync"
+    android:title="Reload"
+    android:visible="true"
+    app:showAsAction="always" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@id/search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@id/add"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="Add item"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/reload"
+        android:enabled="true"
+        android:icon="@android:drawable/stat_notify_sync"
+        android:title="Reload prices"
+        android:visible="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/settings"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="Settings"
+        android:visible="true"
+        app:showAsAction="never" />
+</menu>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/open_detail"
+        android:title="@string/open_detail"
+        />
+
+    <item
+        android:id="@+id/webpage_item"
+        android:title="@string/open_webpage"
+        />
+
+
+    <item
+        android:id="@+id/reload_item"
+        android:title="@string/reload_price"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/edit_item"
+        android:title="@string/edit_item"
+    />
+
+    <item
+        android:id="@+id/delete_item"
+        android:title="@string/delete"
+        />
+</menu>
