@@ -1,5 +1,42 @@
-package cs4330.cs.utep.edu;
+/**
+ * CS 4330 Homework 3
+ * @author Kevin Apodaca, Wan Koo
+ * @version 3.0
+ * @since 11/10/19
+ * In this assignment, you are to extend your HW2 code and create the
+ultimate version of the My Price Watcher app that supports network and
+data persistence. Your app shall meet all the relevant requirements
+from the previous homework assignments (HW1 and HW2) as well as the
+following new ones.
 
+R1. The app shall find the price of a watched item from the item's Web
+    page. Remember that the URL of an item is provided by the user
+    when the item is added to the watch list.
+    
+    a. Your app shall inform the user if the price of an item can't be
+       found (e.g., malformed or non-existing URL).
+
+    b. Your app shall support item pages from the following websites:
+       - Home Depot (www.homedepot.com) and
+       - Lowe's (www.lowes.com) or at least two online stores of your 
+         choice
+
+R2. The app shall persist watched items. Use a SQLite database to
+    store watched items. For bonus points, consider using a
+    CursorAdapter to provide data to the UI (a ListView).
+
+R3. The app shall be aware of the current network status: on/off. If
+    Wifi is off, it shall inform the user and direct to the built-in
+    Network (Wifi) Setting app to enable it.
+
+R4. You should separate network and database operations into separate
+    modules (or classes) to decouple them from the rest of the code.
+
+R5. Use the following configuration for your project.
+ */
+
+package cs4330.cs.utep.edu;
+// imports
 import android.annotation.SuppressLint;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -32,6 +69,9 @@ import java.util.ArrayList;
 import cs4330.cs.utep.edu.models.ItemManager;
 import cs4330.cs.utep.edu.models.PriceFinder;
 
+/**
+ * Class will use the fragments to display the items that are inserted into the list view.
+ */
 public class showItem extends FragmentActivity {
     TextView itemTitle;
     TextView newPrice;
@@ -61,6 +101,7 @@ public class showItem extends FragmentActivity {
 
         DecimalFormat f = new DecimalFormat("##.00");
 
+        /** Mapping the button to the View on the R file. */
         this.itemTitle = (TextView) findViewById(R.id.textViewNameItem);
         this.oldPrice = (TextView) findViewById(R.id.textViewInitialPriceItem);
         this.newPrice = (TextView) findViewById(R.id.textViewCurrentPriceItem);
@@ -135,6 +176,9 @@ public class showItem extends FragmentActivity {
         });
     }
 
+    /**
+     * Method will be used to handle the views for when a user decides to visit the webpage of an item.
+     */
     protected void WebClicked(View view){
         String url = this.itm.getItem(position).getUrl();
         if (!url.startsWith("http://") && !url.startsWith("https://"))
@@ -201,9 +245,11 @@ public class showItem extends FragmentActivity {
         try{
             fos = openFileOutput(FILE_NAME, MODE_PRIVATE);
             fos.write(jsonSerial.getBytes());
-        }catch (FileNotFoundException e) {
+        }
+        catch (FileNotFoundException e) {
             e.printStackTrace();
-        } catch (IOException e) {
+        } 
+        catch (IOException e) {
             e.printStackTrace();
         } finally {
             if (fos != null) {
