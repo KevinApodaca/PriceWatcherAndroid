@@ -115,15 +115,15 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
         ArrayList<PriceFinder> tmp = new ArrayList<PriceFinder>();
         this.filter                = findViewById(R.id.searchFilter);
         this.itm                   = new ItemManager();
-        
+
         this.filter.setVisibility(View.GONE);   // used to set the visibility of the search bar.
 
-        // Check network connection
+        /** Validating network connection. */
         if (isNetworkOn()) {
              Toast.makeText(getBaseContext(), "Welcome", Toast.LENGTH_SHORT).show();
         } else {
              showNetWorkDialog();
-             Toast.makeText(getBaseContext(), "You are Offline", Toast.LENGTH_SHORT).show();
+             Toast.makeText(getBaseContext(), "You are offline", Toast.LENGTH_SHORT).show();
         }
 
         // Load into text "items.json" string (If exist)
