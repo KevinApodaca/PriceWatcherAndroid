@@ -8,36 +8,29 @@ ultimate version of the My Price Watcher app that supports network and
 data persistence. Your app shall meet all the relevant requirements
 from the previous homework assignments (HW1 and HW2) as well as the
 following new ones.
-
 R1. The app shall find the price of a watched item from the item's Web
-    page. Remember that the URL of an item is provided by the user
-    when the item is added to the watch list.
-    
-    a. Your app shall inform the user if the price of an item can't be
-       found (e.g., malformed or non-existing URL).
+page. Remember that the URL of an item is provided by the user
+when the item is added to the watch list.
 
-    b. Your app shall support item pages from the following websites:
-       - Home Depot (www.homedepot.com) and
-       - Lowe's (www.lowes.com) or at least two online stores of your 
-         choice
-
+a. Your app shall inform the user if the price of an item can't be
+found (e.g., malformed or non-existing URL).
+b. Your app shall support item pages from the following websites:
+- Home Depot (www.homedepot.com) and
+- Lowe's (www.lowes.com) or at least two online stores of your
+choice
 R2. The app shall persist watched items. Use a SQLite database to
-    store watched items. For bonus points, consider using a
-    CursorAdapter to provide data to the UI (a ListView).
-
+store watched items. For bonus points, consider using a
+CursorAdapter to provide data to the UI (a ListView).
 R3. The app shall be aware of the current network status: on/off. If
-    Wifi is off, it shall inform the user and direct to the built-in
-    Network (Wifi) Setting app to enable it.
-
+Wifi is off, it shall inform the user and direct to the built-in
+Network (Wifi) Setting app to enable it.
 R4. You should separate network and database operations into separate
-    modules (or classes) to decouple them from the rest of the code.
-
+modules (or classes) to decouple them from the rest of the code.
 R5. Use the following configuration for your project.
  */
 
 package cs4330.cs.utep.edu;
 
-//imports 
 import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -101,32 +94,30 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
     ListView itemsList;
 
     @RequiresApi(api = Build.VERSION_CODES.N)
-    /**
-     * Creating the instance by overriding onCreate
-     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /** The variables we will be using through the activity. */
+        // Variables
         appDb                      = new DatabaseHelper(this);
         String text                = null;
         ArrayList<PriceFinder> tmp = new ArrayList<PriceFinder>();
         this.filter                = findViewById(R.id.searchFilter);
         this.itm                   = new ItemManager();
 
-        this.filter.setVisibility(View.GONE);   // used to set the visibility of the search bar.
+        // Set visibility of search bar off from the beginning
+        this.filter.setVisibility(View.GONE);
 
-        /** Validating network connection. */
+        // Check network connection
         if (isNetworkOn()) {
              Toast.makeText(getBaseContext(), "Welcome", Toast.LENGTH_SHORT).show();
         } else {
              showNetWorkDialog();
-             Toast.makeText(getBaseContext(), "You are offline", Toast.LENGTH_SHORT).show();
+             Toast.makeText(getBaseContext(), "You are Offline", Toast.LENGTH_SHORT).show();
         }
 
-        /** Loading the items that are in the json file. */
+        // Load into text "items.json" string (If exist)
         if(!isNetworkOn()) {
 
             try {
@@ -137,7 +128,7 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
 
             this.itemsList = findViewById(R.id.items_list);
 
-            /** Here we have to convert the json into valid objects for the adapter list. */
+            // Convert text (json text) into objects to load into the adapter list
             if (text != null) {
                 tmp = gson.fromJson(text, new TypeToken<ArrayList<PriceFinder>>() {
                 }.getType());
@@ -150,13 +141,13 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
             this.itm = loadFromDB();
         }
 
+//        Log.i("Name", this.itm.getItem(1).getName());
+
         this.itemAdapter = new PriceFinderAdapter(this, this.itm.getList());
         this.itemsList.setAdapter(itemAdapter);
         this.itemsList.setTextFilterEnabled(true);
-        
-        /**
-         * Here we implement the feature and make a search that filters out items.
-         */
+
+        // Create search filter
         filter.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -176,7 +167,6 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
 
         String action = getIntent().getAction();
         String type   = getIntent().getType();
-        
         if (Intent.ACTION_SEND.equalsIgnoreCase(action) && type != null && ("text/plain".equals(type))){
             String url = getIntent().getStringExtra(Intent.EXTRA_TEXT);
             FragmentManager fm = getSupportFragmentManager();
@@ -197,9 +187,7 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
         itemAdapter.setNotifyOnChange(true);
 
     }
-    /**
-     * Method to implement the Async function.
-     */
+
     public void doAsync(String url){
         if(!isNetworkOn()){
             showNetWorkDialog();
@@ -209,14 +197,16 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
             ais.setUrl(url);
             ais.execute();
         } else{
-            Toast.makeText(getBaseContext(), "Please connect to the internet", Toast.LENGTH_LONG).show();
+            Toast.makeText(getBaseContext(), "Need Internet to work!", Toast.LENGTH_LONG).show();
 
         }
 
     }
-/**
- * This class will take care of the Item synchronization using the AsyncTask.
- */
+
+    //================================================================================
+    // Async
+    //================================================================================
+
     public class AddItemSync extends AsyncTask<Void, Void, Void> {
 
         String stringPrice = null;
@@ -226,32 +216,23 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
         String image = null;
         ProgressDialog pd = new ProgressDialog(MainActivity.this);
 
-        /**
-         * Method sets the url of the item.
-         */
         public void setUrl(String url) {
             this.url = url;
         }
-        /**
-         * Method sets the domain for the website of the item.
-         */
+
         public String getDomainName(String url) throws URISyntaxException {
             URI uri = new URI(url);
             String domain = uri.getHost();
             return domain.startsWith("www.") ? domain.substring(4) : domain;
         }
-        /**
-         * Display a loading message while information is retrieved.
-         */
+
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
             this.pd.setMessage("loading");
             this.pd.show();
         }
-        /**
-         * Method will work in the background and get the data for the item by scraping the website using JSoup.
-         */
+
         @Override
         protected Void doInBackground(Void... voids) {
             try {
@@ -293,6 +274,38 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
                         this.name = doc2.title();
 
                         break;
+
+
+                    case "ebay.com":
+                        Document doc4 = Jsoup.connect(this.url).userAgent("Opera").get();
+                        Element price4 = doc4.select(".notranslate").first();
+                        this.name = doc4.title();
+                        this.stringPrice = price4.text();
+                        if(this.stringPrice.substring(0, 4).equals("US $")) {
+                            String filter2 = this.stringPrice.replace("US $", "");
+                            this.stringPrice = filter2.replace(",", "");
+                        }
+                        if(this.stringPrice.substring(0, 2).equals("$ ")) {
+                            String filter2 = this.stringPrice.replace("$ ", "");
+                            this.stringPrice = filter2.replace(",", "");
+                        }
+                        if(this.stringPrice.substring(0,1).equals("$")) {
+                            String filter2 = this.stringPrice.replace("$", "");
+                            this.stringPrice = filter2.replace(",", "");
+                        }
+                        else {
+                            String filter2 = this.stringPrice.replace("US ", "");
+                            this.stringPrice = filter2.replace(",", "");
+                        }
+                        Elements img4 = doc4.select(".img.img300");
+
+                        for(Element e : img4) {
+                            this.image = (e.attr("src"));
+                        }
+                        this.name = doc4.title();
+
+                        break;
+
 
                     case "homedepot.com":
                         Document doc3 = Jsoup.connect(this.url).timeout(0)
@@ -337,13 +350,14 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
             return null;
         }
 
-        /**
-         * Method will be used to time out if URL takes too long to process or return an error if invalid store.
-         */
         @Override
         protected void onPostExecute(Void s) {
             super.onPostExecute(s);
             pd.dismiss();
+
+            Log.i("NAME", this.name);
+            Log.i("PRICE", this.stringPrice);
+            Log.i("IMAGE", this.image);
 
             if(this.url == null || this.stringPrice == null || this.name == null || this.image == null){
                 Toast.makeText(getBaseContext(), "Request Timeout", Toast.LENGTH_LONG).show();
@@ -357,7 +371,7 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
 
 
         }
-        /** Updating the progress bar. */
+
         @Override
         protected void onProgressUpdate(Void... values) {
             super.onProgressUpdate(values);
@@ -366,7 +380,7 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
     }
 
     /**
-     * Method will be used to handle the event of a user selecting an item from the view.
+     * Method to get which PriceItem object (item) gets clicked in the ListView
      * @param position
      */
     public void itemClicked(int position){
@@ -405,11 +419,15 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
         this.itemAdapter.notifyDataSetChanged();
     }
 
+    //================================================================================
+    // Menus and UI methods
+    //================================================================================
+
     /**
-     * Method will be used to create the general context menu for our app.
-     * @param menu - the menu type.
-     * @param v - the view.
-     * @param menuInfo - the information for that menu.
+     * Method to create context menu (General)
+     * @param menu
+     * @param v
+     * @param menuInfo
      */
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
@@ -419,9 +437,9 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
     }
 
     /**
-     * Method will be used to create options menu
-     * @param menu - menu of the app
-     * @return true - if everything was able to load correctly
+     * Method to create options menu
+     * @param menu of the app
+     * @return true if everything loads correctly
      */
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -430,9 +448,9 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
     }
 
     /**
-     * Method will be used to create context menu on selected item on ListView
-     * @param item - the item that the user has selected
-     * @return true - if input exist
+     * Method to create context menu on selected item on ListView
+     * @param item selected
+     * @return if input exist true
      */
     @Override
     public boolean onContextItemSelected(MenuItem item) {
@@ -442,19 +460,15 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
             case R.id.edit_item:
                 showEditDialog(itemPosition);
                 return true;
-
             case R.id.delete_item:
                 showDeleteDialog(itemPosition);
                 return true;
-
             case R.id.reload_item:
                 setValues(itemPosition);
                 return true;
-
             case R.id.open_detail:
                 itemClicked(itemPosition);
                 return true;
-
             case R.id.webpage_item:
                 String url = itm.getItem(itemPosition).getUrl();
                 if (!url.startsWith("http://") && !url.startsWith("https://"))
@@ -466,7 +480,6 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
                    // Toast.makeText(getBaseContext(), "Webpage " + url + "does not exist", Toast.LENGTH_SHORT).show();
                 }
                 return true;
-            // default value.    
             default:
                 return super.onContextItemSelected(item);
         }
@@ -474,7 +487,7 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
 
     /**
      * Menu of options
-     * @param item - the item that was clicked by the user.
+     * @param item clicked
      * @return true if option exist, false if don't
      */
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -482,15 +495,12 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
             case R.id.search:
                 toggleSearchField();
                 return true;
-
             case R.id.add:
                 showAddDialog();
                 return true;
-
             case R.id.reload:
                 reloadItems();
                 return true;
-
             case R.id.settings:
                 Toast.makeText(getBaseContext(), "TBD", Toast.LENGTH_SHORT).show();
                 return true;
@@ -499,20 +509,24 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
     }
 
     /**
-     * Method will toggle the EditText field for searching on the ListView of the Items
+     * This method will toggle the EditText field for searching on the ListView of the Items
      */
     public void toggleSearchField() {
         if(this.filter.getVisibility() == View.VISIBLE) {
             this.filter.setVisibility(View.GONE);
-        }
-        else{
+        }else{
             this.filter.setVisibility(View.VISIBLE);
         }
     }
 
+    //================================================================================
+    // Item management | CRUD
+    //================================================================================
+
     /**
-     * This method will add the item to the price finder and save it into "items.json"
-     * @param source - the link of the PriceFinder Object
+     * Add PriceFinder into ItemManager and save it into "items.json"
+     * @param source link of the PriceFinder Object
+     *
      */
     public void addItem(String source, double price, String name, String image) {
         Log.i("SOURCE", source);
@@ -524,31 +538,27 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
 
         try {
             save();
-        } 
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
-
         this.itemAdapter.addItem(pf);
         this.itemAdapter.notifyDataSetChanged();
     }
 
     /**
-     * Method will be used to update the price of the item in item manager.
-     * @param name - name of the PriceFinder Item to be updated
-     * @param source - the link of the PriceFinder Item to be updated
-     * @param position - the position of PriceFinder in ItemManager to be updated
-     * @param image - the link of image of the PriceFinder Item to be updated
+     * Updates PriceFinder object in ItemManager
+     * @param name of the PriceFinder Item to be updated
+     * @param source Link of the PriceFinder Item to be updated
+     * @param position position of PriceFinder in ItemManager to be updated
+     * @param image Link of image of the PriceFinder Item to be updated
      */
     public void editItem(String name, String source, int position, String image, String id){
         PriceFinder pf = this.itm.getItem(position);
         appDb.edit(id, name, source);
         this.itm.editItem(pf, pf.getPrice(), name, source, image);
-
         try {
             save();
-        } 
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
@@ -557,15 +567,14 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
     }
 
     /**
-     * Method will be used to create a new price in Pricefinder object in ItemManager and saves it to the JSON file.
-     * @param position - the position of Pricefinder Object in  ItemManager
+     * Creates a new price in Pricefinder object in ItemManager and saves it in JSON file
+     * @param position of Pricefinder Object in  ItemManager
      */
     private void setValues(int position){
         itm.getItem(position).randomPrice();
         try {
             save();
-        } 
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
         itemAdapter.notifyDataSetChanged();
@@ -580,9 +589,13 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
         }
     }
 
+    //================================================================================
+    // Dialogs
+    //================================================================================
+
     /**
-     * Method will be used to create a popup to delete an item.
-     * @param position - the position in the PriceFinder in ItemManager(ArrayList)
+     * Pops a dialog for delete a PriceFinder Object
+     * @param position in the PriceFinder in ItemManager(ArrayList)
      */
     public void showDeleteDialog(int position){
         FragmentManager fm = getSupportFragmentManager();
@@ -593,8 +606,9 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
         deleteDialogFragment.show(fm, "delete_item");
     }
 
-/** Handling the dialogs */
-
+    /**
+     * Shows a dialog to add a PriceFinder object and adds it to ItemManager
+     */
     public void showAddDialog(){
         FragmentManager fm = getSupportFragmentManager();
         AddDialog addDialogFragment = new AddDialog();
@@ -608,26 +622,24 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
     }
 
     /**
-     * Method will be used to create a popup to edit PriceFinder properties (Name, URL)
-     * @param position - position in the arraylist ItemManager
+     * Pops a dialog to edit PriceFinder properties (Name, URL)
+     * @param position in the arraylist ItemManager
      */
     public void showEditDialog(int position){
         FragmentManager fm = getSupportFragmentManager();
         ЕditDialog editDialogFragment = new ЕditDialog(1);
         Bundle args = new Bundle();
-
         args.putInt("position", position);
         args.putString("itemUrl", itm.getItem(position).getUrl());
         args.putString("itemName", itm.getItem(position).getName());
         args.putString("id", itm.getItem(position).getId());
-
         editDialogFragment.setArguments(args);
         editDialogFragment.show(fm, "edit_item");
     }
 
     /**
-     * Method will be used to create a popup for deleting a PriceFinder Object.
-     * @param position - position in the PriceFinder in ItemManager(ArrayList)
+     * Pops a dialog for delete a PriceFinder Object
+     * @param position in the PriceFinder in ItemManager(ArrayList)
      */
     public void DeleteItemDialog(int position){
         PriceFinder pf = new PriceFinder();
@@ -644,8 +656,12 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
         itemAdapter.notifyDataSetChanged();
     }
 
+    //================================================================================
+    // Write & Load offline information
+    //================================================================================
+
     /**
-     * Method will be used to save the instance of the item into the json file.
+     * Saves the instance of the Itemmanager (items) into a JSON file "items.json"
      * @throws IOException
      */
     private void save() throws IOException {
@@ -655,14 +671,11 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
         try{
             fos = openFileOutput(FILE_NAME, MODE_PRIVATE);
             fos.write(jsonSerial.getBytes());
-        }
-        catch (FileNotFoundException e) {
+        }catch (FileNotFoundException e) {
             e.printStackTrace();
-        } 
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
-        } 
-        finally {
+        } finally {
             if (fos != null) {
                 fos.close();
             }
@@ -670,7 +683,7 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
     }
 
     /**
-     * Method will be used to load the items from the json file. Reads the file and convert JSON to a String
+     * Loads "items.json" into a String format. Reads the file and convert JSON to a String
      * @return JSON from "items.json" in String format
      * @throws IOException
      */
@@ -679,8 +692,7 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
 
         try {
             fis = openFileInput(FILE_NAME);
-        } 
-        catch(FileNotFoundException e){
+        } catch(FileNotFoundException e){
             Log.d("File not found", FILE_NAME);
             return null;
         }
@@ -702,7 +714,7 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
 
         Log.i("Count", String.valueOf(response.getCount()));
         if(response.getCount() == 0) {
-            Toast.makeText(getBaseContext(), "Add new item", Toast.LENGTH_LONG).show();
+            Toast.makeText(getBaseContext(), "Add new products", Toast.LENGTH_LONG).show();
         }
 
         while(response.moveToNext()) {
@@ -711,9 +723,11 @@ public class  MainActivity extends AppCompatActivity implements DeleteDialog.Del
         }
         return itmDb;
     }
-    /**
-     * Method will check if the network database is connected.
-     */
+
+    //================================================================================
+    // Network
+    //================================================================================
+
     private Boolean isNetworkOn() {
         ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
 
